@@ -4,12 +4,6 @@ echo "front-page.php";
 get_header();
 ?>
 
-
-
-
-
-?>
-
 <!-- about section -->
 
 <?php
@@ -53,7 +47,7 @@ if(get_field('about_text'))
         </div>
 
         <?php $image = wp_get_attachment_image_src(get_field('thx_footer'), 'full'); ?>
-        
+
         <div class="quote_logo">
             <img src="<?php echo $bottom; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
@@ -63,4 +57,3 @@ if(get_field('about_text'))
 
 
 <?php get_footer(); ?>
-
