@@ -1,3 +1,5 @@
+<?php
+/**
  * Author: Ole Fredrik Lie
  * URL: http://olefredrik.com
  *
@@ -370,7 +372,7 @@ function cmb2_sample_metaboxes() {
 		'context'      => 'normal', //  'normal', 'advanced', or 'side'
 		'priority'     => 'high',  //  'high', 'core', 'default' or 'low'
 		'show_names'   => true, // Show field names on the left
-	) );	
+	) );
 
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'powhearing',
@@ -412,4 +414,3 @@ $cmb->add_group_field( $group_field_id, array(
 	'type' => 'text',
 ) );
 }
-
