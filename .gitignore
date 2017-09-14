@@ -99,3 +99,10 @@ wp-content/themes/twenty*/
 # ignore node/grunt dependency directories
 wp-content/themes/powhearing/node_modules/
 wp-content/themes/powhearing/gulpfile.js
+wp-content/themes/powhearing/gulpfile.js.bak
+wp-content/themes/powhearing/gulpfile.babel.js
+wp-content/themes/powhearing/package.json
+wp-content/themes/powhearing/package-lock.json
+
+wp-content/themes/powhearing/src/assets/img/demo/
+wp-content/themes/powhearing/src/assets/img/icons/
