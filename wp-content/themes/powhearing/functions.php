@@ -1,5 +1,3 @@
-<?php
-/**
  * Author: Ole Fredrik Lie
  * URL: http://olefredrik.com
  *
@@ -66,4 +64,352 @@ function themename_custom_logo_setup() {
     );
     add_theme_support( 'custom-logo', $defaults );
 }
+
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+// footer
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_about-heading',
+        'title' => 'about heading',
+        'fields' => array (
+            array (
+                'key' => 'field_59b9827a5757f',
+                'label' => 'about heading',
+                'name' => 'about_heading',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '9',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_about-pic',
+        'title' => 'about pic',
+        'fields' => array (
+            array (
+                'key' => 'field_59b986b55d7fe',
+                'label' => 'about pic',
+                'name' => 'about_pic',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '9',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_about-text',
+        'title' => 'about text',
+        'fields' => array (
+            array (
+                'key' => 'field_59b98d3e66aa1',
+                'label' => 'about text',
+                'name' => 'about_text',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '9',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
+
+// custom fields
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_form',
+        'title' => 'form',
+        'fields' => array (
+            array (
+                'key' => 'field_59b96b0bf2579',
+                'label' => 'form ID',
+                'name' => 'form-id',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '14',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_thx-content',
+        'title' => 'thx content',
+        'fields' => array (
+            array (
+                'key' => 'field_59b97ecd31e0e',
+                'label' => 'thx content',
+                'name' => 'thx_content',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '14',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_thx-footer',
+        'title' => 'thx footer',
+        'fields' => array (
+            array (
+                'key' => 'field_59b97eeffba5e',
+                'label' => 'thx footer',
+                'name' => 'thx_footer',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '14',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_thx-head',
+        'title' => 'thx head',
+        'fields' => array (
+            array (
+                'key' => 'field_59b97e5adb498',
+                'label' => 'thx head',
+                'name' => 'thx_head',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '14',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_thx-title',
+        'title' => 'thx title',
+        'fields' => array (
+            array (
+                'key' => 'field_59b97eac25397',
+                'label' => 'thx title',
+                'name' => 'thx_title',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '14',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
+
+//cmb2 tester
+
+add_action('cmb2_admin_init' , 'cmb2_sample_metaboxes');
+function cmb2_sample_metaboxes() {
+	$prefix = '_yourprefix_';
+	$cmb = new_cmb2_box( array(
+		'id'           => 'test_metabox',
+		'title'        => 'Contact us',
+		'object_types' => array( 'post', 'event' ), // post type
+		'context'      => 'normal', //  'normal', 'advanced', or 'side'
+		'priority'     => 'high',  //  'high', 'core', 'default' or 'low'
+		'show_names'   => true, // Show field names on the left
+	) );	
+
+$group_field_id = $cmb->add_field( array(
+	'id'          => 'powhearing',
+	'type'        => 'group',
+	'description' => __( 'Generates reusable form entries', 'cmb2' ),
+	// 'repeatable'  => false, // use false if you want non-repeatable group
+	'options'     => array(
+		'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
+		'remove_button' => __( 'Remove Entry', 'cmb2' ),
+		'sortable'      => true, // beta
+		// 'closed'     => true, // true to have the groups closed by default
+	),
+) );
+
+// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'First Name',
+	'id'   => 'fName',
+	'type' => 'text',
+	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Last Name',
+	'id'   => 'lName',
+	'type' => 'text',
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Email',
+	'id'   => 'email',
+	'type' => 'text',
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Message',
+	'id'   => 'message',
+	'type' => 'text',
+) );
+}
+
