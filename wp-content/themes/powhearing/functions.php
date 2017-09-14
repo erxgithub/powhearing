@@ -123,3 +123,4 @@ $cmb->add_group_field( $group_field_id, array(
 	'type' => 'text',
 ) );
 }
+

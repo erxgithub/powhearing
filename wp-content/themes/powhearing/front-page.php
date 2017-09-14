@@ -4,6 +4,12 @@ echo "front-page.php";
 get_header();
 ?>
 
+<?php while ( have_posts() ) : the_post();
+
+    get_template_part( 'template-parts/comp/description', 'detail' );
+endwhile; // End of the loop.
+?>
+
 <!-- percentage -->
 <?php
 if(get_field('percentage_1'))
