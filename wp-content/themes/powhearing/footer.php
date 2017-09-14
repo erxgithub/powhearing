@@ -1,3 +1,6 @@
+
+
+
 <?php
 /**
  * The template for displaying the footer
@@ -9,6 +12,9 @@
  */
 
 ?>
+
+
+
 
 		</section>
 		<div class="footer-container" data-sticky-footer>
@@ -24,6 +30,23 @@
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->
 <?php endif; ?>
+
+</div>
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="contact-low">
+		<?php dynamic_sidebar('contact'); ?>
+	</div>
+
+	
+
+</footer>
+
+
+</div>
+
+	
+
 
 
 <?php wp_footer(); ?>
