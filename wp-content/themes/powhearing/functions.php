@@ -67,3 +67,59 @@ function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+
+//cmb2 tester
+
+add_action('cmb2_admin_init' , 'cmb2_sample_metaboxes');
+function cmb2_sample_metaboxes() {
+	$prefix = '_yourprefix_';
+	$cmb = new_cmb2_box( array(
+		'id'           => 'test_metabox',
+		'title'        => 'Contact us',
+		'object_types' => array( 'post', 'event' ), // post type
+		'context'      => 'normal', //  'normal', 'advanced', or 'side'
+		'priority'     => 'high',  //  'high', 'core', 'default' or 'low'
+		'show_names'   => true, // Show field names on the left
+	) );	
+
+$group_field_id = $cmb->add_field( array(
+	'id'          => 'powhearing',
+	'type'        => 'group',
+	'description' => __( 'Generates reusable form entries', 'cmb2' ),
+	// 'repeatable'  => false, // use false if you want non-repeatable group
+	'options'     => array(
+		'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
+		'remove_button' => __( 'Remove Entry', 'cmb2' ),
+		'sortable'      => true, // beta
+		// 'closed'     => true, // true to have the groups closed by default
+	),
+) );
+
+// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'First Name',
+	'id'   => 'fName',
+	'type' => 'text',
+	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Last Name',
+	'id'   => 'lName',
+	'type' => 'text',
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Email',
+	'id'   => 'email',
+	'type' => 'text',
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'Message',
+	'id'   => 'message',
+	'type' => 'text',
+) );
+}
