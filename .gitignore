@@ -106,3 +106,5 @@ wp-content/themes/powhearing/package-lock.json
 
 wp-content/themes/powhearing/src/assets/img/demo/
 wp-content/themes/powhearing/src/assets/img/icons/
+wp-content/themes/powhearing/dist/assets/img/demo/
+wp-content/themes/powhearing/dist/assets/img/icons/
