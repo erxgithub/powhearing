@@ -1,6 +1,6 @@
 <?php
 
-echo "front-page.php";
+echo "front-page.php <br>";
 get_header();
 ?>
 

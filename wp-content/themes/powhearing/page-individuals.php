@@ -1,6 +1,6 @@
 <?php
 /* Template Name: individuals */
-echo "page-individuals.php";
+echo "page-individuals.php <br>";
 ?>
 
 <?php while ( have_posts() ) : the_post();

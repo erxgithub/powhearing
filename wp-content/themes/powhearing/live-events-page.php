@@ -1,13 +1,10 @@
 <?php
 /* Template Name: live events */
-echo "live-events-page.php";
+echo "live-events-page.php <br>";
 ?>
 
-<?php while ( have_posts() ) : the_post();
-
+<?php 
     get_template_part( 'template-parts/comp/description', 'detail' );
-    
-endwhile; // End of the loop.
 ?>
 
 <?php
