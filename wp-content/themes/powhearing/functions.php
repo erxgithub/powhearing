@@ -98,29 +98,44 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 // Id's for group's fields only need to be unique for the group. Prefix is not needed.
+//organizations
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'First Name',
-	'id'   => 'fName',
-	'type' => 'text',
-	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-) );
-
-$cmb->add_group_field( $group_field_id, array(
-	'name' => 'Last Name',
-	'id'   => 'lName',
+	'name' => 'organi-title',
+	'id'   => 'organi-title',
 	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Email',
-	'id'   => 'email',
+	'name' => 'organi-content',
+	'id'   => 'organi-content',
+	'type' => 'text',
+) );
+
+//live-event
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'live-content',
+	'id'   => 'live-title',
 	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Message',
-	'id'   => 'message',
+	'name' => 'live-content',
+	'id'   => 'live-content',
 	'type' => 'text',
 ) );
+
+//individuals
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'indiv-title',
+	'id'   => 'indiv-title',
+	'type' => 'text',
+) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'indiv-content',
+	'id'   => 'indiv-content',
+	'type' => 'text',
+) );
+
 }
 
