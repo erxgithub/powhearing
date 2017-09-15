@@ -47,14 +47,24 @@ $about_pic = get_field('about_pic');
 $image = wp_get_attachment_image_src(get_field('image_test'), 'full'); ?>
 <img src="<?php echo $about_pic; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 
+
+
+
 <?php
 
-if(get_field('about_text'))
-{
-	echo '<p>' . get_field('about_text') . '</p>';
-}
+if(get_field('about_text')) {
 
-?>
+	?>
+
+<div class="about-text">
+
+	<?php echo '<p>' . get_field('about_text') . '</p>';?>
+
+</div>
+
+<?php  }?>
+
+
 
 <!-- thank you section -->
 
