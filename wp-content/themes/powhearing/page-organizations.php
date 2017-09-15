@@ -1,7 +1,11 @@
-<?php
-/* Template Name: organizations */
-echo "page-organizations.php";
-?>
+
+<?php /* Template Name: organizations */ ?>
+<?php echo 'page-organizations.php' ?>
+    <div>
+    <?php
+        get_template_part('template-parts/comp/success-story');
+    ?>
+</div>
 
 <?php while ( have_posts() ) : the_post();
 
@@ -23,3 +27,4 @@ if(get_field('organi-title'))
     </p>
 
 <?php } ?>
+

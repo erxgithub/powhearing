@@ -1,7 +1,11 @@
-<?php
-/* Template Name: individuals */
-echo "page-individuals.php";
-?>
+
+<?php /* Template Name: individuals */ ?>
+<?php echo 'page-individuals.php' ?>
+    <div>
+    <?php
+        get_template_part('template-parts/comp/success-story');
+    ?>
+</div>
 
 <?php while ( have_posts() ) : the_post();
 
@@ -23,3 +27,4 @@ if(get_field('indiv-title'))
     </p>
 
 <?php } ?>
+
