@@ -64,15 +64,17 @@
 @import "global/wp-admin";
 @import "global/wp-overrides";
 @import "global/flex";
+@import "global/fonts";
 
 // Modules
 @import "modules/navigation";
 @import "modules/content";
 @import "modules/footer";
-@import "modules/about";
-@import "modules/senarios";
+//@import "modules/about";
+//@import "modules/senarios";
 @import "modules/editor-style";
 @import "modules/thx";
+@import "modules/success";
 
 // Components
 @import "components/buttons";
@@ -84,5 +86,3 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
-
-

@@ -1,9 +1,9 @@
-
 <?php
 /* Template Name: organizations */
 echo "page-organizations.php <br>";
 ?>
 
+<?php get_header(); ?>
 
 <!-- getting template_part that is setting for each page his content of description-->
 <div>
@@ -20,3 +20,4 @@ echo "page-organizations.php <br>";
 
 
 
+<?php get_footer(); ?>

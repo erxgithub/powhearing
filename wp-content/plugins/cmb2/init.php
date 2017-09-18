@@ -194,7 +194,7 @@ if ( ! class_exists( 'CMB2_Bootstrap_2253', false ) ) {
 }// End if().
 
 
+include('fields/page-banner.php');
 include('fields/description.php');
-
 include('fields/success-stories.php');
 

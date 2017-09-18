@@ -100,7 +100,7 @@ if(get_field('about_text')) {
 
 	get_template_part( 'template-parts/contact-modal', 'detail' );
 
-endwhile; // End of the loop. 
+endwhile; // End of the loop.
 
 if(get_field('fName'))
 {

@@ -3,11 +3,13 @@
 echo "page-individuals.php <br>";
 ?>
 
+<?php get_header(); ?>
 
 <!-- getting template_part that is setting for each page his content of description-->
 
 <div>
   <?php get_template_part( 'template-parts/comp/description', 'detail' );?>
+
 </div>
 
 
@@ -21,3 +23,4 @@ echo "page-individuals.php <br>";
 
 
 
+<?php get_footer(); ?>
