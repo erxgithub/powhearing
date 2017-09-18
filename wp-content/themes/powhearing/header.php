@@ -37,12 +37,12 @@
 
 		<nav class="site-navigation top-bar" role="navigation">
 			<div style="display: flex; justify-content: space-between; width: 100%;">
-				<div>
+				<div style="width: 50%;">
 					<?php if ( function_exists( 'the_custom_logo' ) ) {
 						the_custom_logo();
 					} ?>
 				</div>
-				<div>
+				<div stylr="width: 50%;">
 					<?php foundationpress_top_bar_r(); ?>
 				</div>
 			</div>
