@@ -1,16 +1,16 @@
 <?php
 
-add_action( 'cmb2_admin_init', 'cmb2_success');
+add_action( 'cmb2_admin_init', 'cmb2_description');
 /**
 * Define the metabox and field configurations.
 */
-function cmb2_success() {
+function cmb2_description() {
    // Start with an underscore to hide fields from custom fields list
    $prefix = '_success_';
 
    $cmb = new_cmb2_box( array(
-       'id'           => 'success_heading',
-       'title'        => 'Success Title',
+       'id'           => 'description_heading',
+       'title'        => 'Description',
        'object_types' => array( 'page' ), // post type
        'show_on'      => array( 'key' => 'page-template', 'value' => ['page-organizations.php', 'page-individuals.php','live-events-page.php'] ),
        'context'      => 'normal', //  'normal', 'advanced', or 'side'
@@ -19,7 +19,7 @@ function cmb2_success() {
    ) );
 
    $group_field_id = $cmb->add_field( array(
-       'id'          => 'wiki_test_repeat_group',
+       'id'          => 'description_repeat_group',
        'type'        => 'group',
        // 'repeatable'  => false, // use false if you want non-repeatable group
        'options'     => array(
@@ -31,20 +31,20 @@ function cmb2_success() {
        ),
    ) );
 
-  
+
 
 
 // organizations
    $cmb->add_group_field( $group_field_id, array(
        'name' => 'Title',
-       'id'   => 'Title',
+       'id'   => 'title',
        'type' => 'text',
    ) );
 
    $cmb->add_group_field( $group_field_id, array(
-    'name' => 'content',
+    'name' => 'Content',
     'id'   => 'content',
-    'type' => 'text',
+    'type' => 'textarea',
 ) );
 
 }?>
