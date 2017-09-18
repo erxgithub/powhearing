@@ -9,16 +9,20 @@ echo "description.php <br>";
 if(is_page('organizations', 'page')){ ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
-        <div class="organi-box">
-            <?php
-                $blah = get_post_meta(get_the_ID(), "description_repeat_group");
-                echo "<br>";?>
-            <h1 class="organi-title">
-                <?php echo $blah[0][0]["title"];?>
-            </h1>
-            <p class="organi-content">
-                <?php echo $blah[0][0]["content"];?>
-            </p>
+    <div class="box">
+            <div class="desc-box">
+                <?php $blah = get_post_meta(get_the_ID(), "description_repeat_group"); echo "<br>";?>
+                <div>
+                    <h1 class="desc-title">
+                    <?php echo $blah[0][0]["title"];?>
+                    </h1>
+                </div>
+                <div>
+                    <p class="desc-content">
+                    <?php echo $blah[0][0]["content"];?>
+                    </p>
+                </div>
+            </div>
         </div>
 
     <?php endwhile; // end of the loop. ?>
@@ -30,14 +34,14 @@ if(is_page('organizations', 'page')){ ?>
 elseif (is_page('live-events' , 'page') ){ ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
-        <div class="live-box">
+        <div class="desc-box">
         <?php
             $blah = get_post_meta(get_the_ID(), "description_repeat_group");
             echo "<br>";?>
-        <h1 class="live-title">
+        <h1 class="desc-title">
             <?php echo $blah[0][0]["title"];?>
         </h1>
-        <p class="live-content">
+        <p class="desc-content">
             <?php echo $blah[0][0]["content"];?>
         </p>
         </div>
@@ -53,14 +57,14 @@ elseif (is_page('live-events' , 'page') ){ ?>
 elseif (is_page('individuals' , 'page') ) {?>
 
     <?php while ( have_posts() ) : the_post(); ?>
-        <div class="indiv-box">
+        <div class="desc-box">
         <?php
             $blah = get_post_meta(get_the_ID(), "description_repeat_group");
             echo "<br>";?>
-        <h1 class="indiv-title">
+        <h1 class="desc-title">
             <?php echo $blah[0][0]["title"];?>
         </h1>
-        <p class="indiv-content">
+        <p class="desc-content">
             <?php echo $blah[0][0]["content"];?>
         </p>
         </div>
