@@ -1,14 +1,17 @@
 <?php
-/* Template Name: organizations */
-echo "page-organizations.php <br>";
+/* Template Name: individuals */
+echo "page-individuals.php <br>";
 ?>
 
 <?php get_header(); ?>
 
 <!-- getting template_part that is setting for each page his content of description-->
+
 <div>
-    <?php get_template_part( 'template-parts/comp/description', 'detail' ); ?>
+  <?php get_template_part( 'template-parts/comp/description', 'detail' );?>
+
 </div>
+
 
 
 <!-- getting template_part that is setting for each page his content of success-story-->
@@ -21,4 +24,3 @@ echo "page-organizations.php <br>";
 
 
 <?php get_footer(); ?>
-
