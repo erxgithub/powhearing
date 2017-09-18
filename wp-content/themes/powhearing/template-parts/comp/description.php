@@ -2,33 +2,69 @@
 
 
 <?php
-echo "description.php";
+echo "description.php <br>";
+
+//while loop to get description of organizations
 
 if(is_page('organizations', 'page')){ ?>
-<div class="organi-box">
-    <h1 class="organi-title"></h1>
-    <p class="organi-content">
-    
-    </p>
-</div>
-<?php } 
+
+    <?php while ( have_posts() ) : the_post(); ?>
+        <div class="organi-box">
+            <?php
+                $blah = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
+                echo "<br>";?>
+            <h1 class="organi-title">
+                <?php echo $blah[0][0]["Title"];?>
+            </h1>
+            <p class="organi-content">
+                <?php echo $blah[0][0]["content"];?>
+            </p>
+        </div>
+
+    <?php endwhile; // end of the loop. ?>
+
+<?php }
+
+//while loop to get description of live-events
+
 elseif (is_page('live-events' , 'page') ){ ?>
 
-<div class="live-box">
-    <h1 class="live-title"></h1>
-    <p class="live-content">
-   
-    </p>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <div class="live-box">
+        <?php
+            $blah = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
+            echo "<br>";?>
+        <h1 class="live-title">
+            <?php echo $blah[0][0]["Title"];?>
+        </h1>
+        <p class="live-content">
+            <?php echo $blah[0][0]["content"];?>
+        </p>
+        </div>
+
+    <?php endwhile; // end of the loop. ?>
+
+
+
 </div>
 
     
 <?php }
-else {?>
-<div class="indiv-box">
-    <h1 class="indiv-title"></h1>
-    <p class="indiv-content">
-    
-    </p>
-</div>
+elseif (is_page('individuals' , 'page') ) {?>
+
+    <?php while ( have_posts() ) : the_post(); ?>
+        <div class="indiv-box">
+        <?php
+            $blah = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
+            echo "<br>";?>
+        <h1 class="indiv-title">
+            <?php echo $blah[0][0]["Title"];?>
+        </h1>
+        <p class="indiv-content">
+            <?php echo $blah[0][0]["content"];?>
+        </p>
+        </div>
+
+    <?php endwhile; // end of the loop. ?>
     
 <?php } ?>

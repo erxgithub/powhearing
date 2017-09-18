@@ -1,32 +1,23 @@
-<?php /* Template Name: organizations */ ?>
-<?php get_header(); ?>
-
-<?php echo 'page-organizations.php'; ?>
-<div>
-    <?php
-        get_template_part('template-parts/comp/success-story');
-    ?>
-</div>
-
-<?php while ( have_posts() ) : the_post();
-
-    get_template_part( 'template-parts/comp/description', 'detail' );
-endwhile; // End of the loop.
+<?php
+/* Template Name: organizations */
+echo "page-organizations.php <br>";
 ?>
 
-<?php
-if(get_field('organi-title'))
-{ ?>
+<?php get_header(); ?>
 
-    <h1 class="organi-title">
-    <?php echo '<p>' . get_field('organi-title') . '</p>'; ?>
-    </h1>
+<!-- getting template_part that is setting for each page his content of description-->
+<div>
+    <?php get_template_part( 'template-parts/comp/description', 'detail' ); ?>
+</div>
 
 
-    <p class="organi-content">
-    <?php echo '<p>' . get_field('organi-content') . '</p>'; ?>
-    </p>
+<!-- getting template_part that is setting for each page his content of success-story-->
 
-<?php } ?>
+<div>
+    <?php get_template_part('template-parts/comp/success-story'); ?>
+</div>
+
+
+
 
 <?php get_footer(); ?>
