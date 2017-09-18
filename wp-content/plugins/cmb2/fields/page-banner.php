@@ -14,7 +14,7 @@ function cmb2_banner() {
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
-            'value' => array('page-organizations.php',
+            'value' => array('home.php', 'page-organizations.php',
                 'page-individuals.php', 'live-events-page.php')
          ),
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
