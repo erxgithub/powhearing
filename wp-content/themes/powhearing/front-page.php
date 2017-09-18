@@ -28,6 +28,7 @@ if(get_field('content_2'))
 }
 ?>
 
+
 <!-- about section -->
 
 <?php
@@ -56,6 +57,12 @@ if(get_field('about_text')) {
 
 <?php  }?>
 
+<!-- <?php while ( have_posts() ) : the_post();
+	get_template_part( 'template-parts/comp/scenarios_images.php', 'detail' );
+endwhile;?> -->
+
+<?php include 'template-parts/comp/scenarios.php';?>
+
 
 
 <!-- thank you section -->
@@ -78,11 +85,16 @@ if(get_field('about_text')) {
         </div>
 
         <?php $image = wp_get_attachment_image_src(get_field('thx_footer'), 'full'); ?>
-
+        
         <div class="quote_logo">
             <img src="<?php echo $bottom; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
     </div>
 
 <?php } ?>
+
+
+
+<?php get_footer(); ?>
+
 
