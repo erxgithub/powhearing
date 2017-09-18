@@ -23,7 +23,7 @@ function cmb2_success() {
     ) );
 
     $group_field_id = $cmb->add_field( array(
-        'id'          => 'wiki_test_repeat_group',
+        'id'          => 'success_repeat_group',
         'type'        => 'group',
         // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
