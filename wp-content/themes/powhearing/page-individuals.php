@@ -1,7 +1,8 @@
-
 <?php /* Template Name: individuals */ ?>
-<?php echo 'page-individuals.php' ?>
-    <div>
+<?php get_header(); ?>
+
+<?php echo 'page-individuals.php'; ?>
+<div>
     <?php
         get_template_part('template-parts/comp/success-story');
     ?>
@@ -28,3 +29,4 @@ if(get_field('indiv-title'))
 
 <?php } ?>
 
+<?php get_footer(); ?>

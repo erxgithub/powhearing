@@ -1,7 +1,8 @@
-
 <?php /* Template Name: organizations */ ?>
-<?php echo 'page-organizations.php' ?>
-    <div>
+<?php get_header(); ?>
+
+<?php echo 'page-organizations.php'; ?>
+<div>
     <?php
         get_template_part('template-parts/comp/success-story');
     ?>
@@ -28,3 +29,4 @@ if(get_field('organi-title'))
 
 <?php } ?>
 
+<?php get_footer(); ?>
