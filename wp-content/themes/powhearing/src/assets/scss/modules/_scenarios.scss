@@ -1,0 +1,80 @@
+.scenarios-section h1 {
+    font-family: Lato-Bold;
+    text-align: center;
+}
+
+.scenarios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.scenario-box img {
+    min-width: 100%;
+}
+
+.scenario-box h2 {
+    font-family: Lato-Regular;
+    text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+    .scenarios-section {
+        margin: 5%;
+    }
+
+    .scenarios-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .scenario-box {
+        width: 45%;
+        margin: 1%;
+    }
+
+    .scenario-box h2 {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .scenarios-section {
+        margin: 0 10% 0 10%;
+    }
+
+    .scenarios-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .scenario-box {
+        width: 40%;
+        margin: 5%;
+    }
+
+    .scenario-box h2 {
+        font-size: 1.75rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .scenarios-section {
+        margin: 0 10% 0 10%;
+    }
+
+    .scenarios-section h1 {
+        font-size: 3rem;
+    }
+
+    .scenario-box {
+        width: 40%;
+        margin: 5%;
+    }
+
+    .scenario-box h2 {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+}

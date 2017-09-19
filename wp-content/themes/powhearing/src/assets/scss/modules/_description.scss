@@ -1,0 +1,81 @@
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.desc-title {
+    font-family: Lato-Bold;
+    text-align: center;
+}
+
+
+.desc-content {
+    font-family: Lato-Regular;
+    
+}
+
+// mobile
+@media only screen and (max-width: 599px) {
+    .desc-box {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .desc-title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .desc-content {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        padding-top: 2rem;
+    }
+}
+
+// tablet
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .desc-box {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desc-title {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .desc-content {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        width: 100%;
+        padding-top: 3rem;
+    }
+}
+
+// desktop
+@media only screen and (min-width: 1240px) {
+    .desc-box {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .desc-title {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .desc-content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 100%;
+        padding-top: 3rem;
+    }
+}

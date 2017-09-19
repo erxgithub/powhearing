@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -64,14 +63,23 @@
 @import "global/wp-admin";
 @import "global/wp-overrides";
 @import "global/flex";
+@import "global/fonts";
 
 // Modules
 @import "modules/navigation";
 @import "modules/content";
 @import "modules/footer";
+
+//@import "modules/about";
+
 @import "modules/editor-style";
 @import "modules/contact-form";
 @import "modules/modal-products";
+@import "modules/thx";
+@import "modules/scenarios";
+@import "modules/success";
+@import "modules/description";
+
 // Components
 @import "components/buttons";
 @import "components/cards";
@@ -82,9 +90,3 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
-
-
-.quote_logo{
-  height: 10vh;
-  width: 10vw;
-}

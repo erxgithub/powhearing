@@ -40,13 +40,15 @@
 		</div> -->
 
 		<nav class="site-navigation top-bar" role="navigation">
-			<div style="display: flex; justify-content: space-between; width: 100%;">
-				<div style="width: 50%;">
+
+			<div class="header-bar">
+				<div>
+
 					<?php if ( function_exists( 'the_custom_logo' ) ) {
 						the_custom_logo();
 					} ?>
 				</div>
-				<div stylr="width: 50%;">
+				<div style="width: 50%;">
 					<?php foundationpress_top_bar_r(); ?>
 				</div>
 			</div>
@@ -67,6 +69,17 @@
 				<?php //endif; ?>
 			</div>
 		</nav>
+
+	    <div class="banner-section">
+			<?php
+			$banner = get_post_meta(get_the_ID(), "banner_repeat_group");
+	        //var_dump($banner);
+	        //echo nl2br("\n");
+			//echo $banner[0][0]["image"];
+			//echo nl2br("\n");
+			?>
+			<img src="<?php echo $banner[0][0]["image"]; ?>" />
+	    </div>
 
 	</header>
 
