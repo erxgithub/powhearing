@@ -4,21 +4,21 @@
 echo "front-page.php <br>";
 get_header();
 ?>
+<!-- LINKS FOR MODALS -->
+<!-- <p><button class="button" data-open="modalProducts">Click me for a modal</button></p> -->
+<!-- <p><button class="button" data-open="modalForm">Let's Talk</button></p> -->
 
 
-<div>
-    <?php get_template_part( 'template-parts/comp/what-we-do', 'detail' );?>
-</div>   
+<!-- what we do -->
 
-<?php $image = wp_get_attachment_image_src(get_field('thx_footer'), 'full'); ?>
-        
-<div class="quote_logo">
-      <img src="<?php echo $bottom; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
-</div>
+<!-- solutions -->
 
-<!-- About section-->
-<?php
-get_template_part( 'template-parts/comp/modal-form', 'detail' );
+<!-- percentage -->
 
-get_footer(); 
-?>
+
+<!-- about section -->
+
+<!-- thank you section -->
+
+
+<?php get_footer(); ?>
