@@ -10,6 +10,9 @@ get_header();
 
 
 <!-- what we do -->
+<div>
+    <?php get_template_part( 'template-parts/comp/what-we-do', 'detail' );?>
+</div>   
 
 <!-- solutions -->
 
@@ -17,11 +20,11 @@ get_header();
     <?php get_template_part( 'template-parts/comp/solutions-home', 'detail' ); ?>
 </div>
 
+<!-- About section-->
+
 
 <!-- percentage -->
 
-
-<!-- about section -->
 
 <!-- thank you section -->
 
