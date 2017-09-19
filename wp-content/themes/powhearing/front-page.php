@@ -5,11 +5,6 @@ echo "front-page.php <br>";
 get_header();
 ?>
 
-<?php while ( have_posts() ) : the_post();
-
-    get_template_part( 'template-parts/comp/description', 'detail' );
-endwhile; // End of the loop.
-?>
 
 <!-- percentage -->
 <?php
@@ -34,6 +29,7 @@ if(get_field('content_2'))
 }
 ?>
 
+
 <!-- about section -->
 
 <?php
@@ -48,9 +44,6 @@ $about_pic = get_field('about_pic');
 $image = wp_get_attachment_image_src(get_field('image_test'), 'full'); ?>
 <img src="<?php echo $about_pic; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 
-
-
-
 <?php
 
 if(get_field('about_text')) {
@@ -64,6 +57,12 @@ if(get_field('about_text')) {
 </div>
 
 <?php  }?>
+
+<!-- <?php while ( have_posts() ) : the_post();
+	get_template_part( 'template-parts/comp/scenarios_images.php', 'detail' );
+endwhile;?> -->
+
+<?php include 'template-parts/comp/scenarios.php';?>
 
 
 
@@ -87,7 +86,7 @@ if(get_field('about_text')) {
         </div>
 
         <?php $image = wp_get_attachment_image_src(get_field('thx_footer'), 'full'); ?>
-
+        
         <div class="quote_logo">
             <img src="<?php echo $bottom; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
@@ -96,16 +95,7 @@ if(get_field('about_text')) {
 <?php } ?>
 
 
-<!-- cbm2 plugin tester -->
-<?php while ( have_posts() ) : the_post();
-
-	get_template_part( 'template-parts/contact-modal', 'detail' );
-
-endwhile; // End of the loop.
-
-if(get_field('fName'))
-{
-	echo '<p>' . get_field('fName') . '</p>';
-} ?>
 
 <?php get_footer(); ?>
+
+
