@@ -8,7 +8,7 @@
  */
 
 ?>
-		
+
 <div class="footer-container" data-sticky-footer>
 	<footer class="footer">
 		<?php do_action( 'foundationpress_before_footer' ); ?>
@@ -17,6 +17,8 @@
 	</footer>
 </div>
 
+<?php wp_footer(); ?>
+<?php do_action( 'foundationpress_before_closing_body' ); ?>
 
 </body>
 </html>
