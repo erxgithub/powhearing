@@ -196,5 +196,5 @@ if ( ! class_exists( 'CMB2_Bootstrap_2253', false ) ) {
 
 include('fields/page-banner.php');
 include('fields/description.php');
+include('fields/scenario-section.php');
 include('fields/success-stories.php');
-

@@ -73,7 +73,7 @@
     padding-top: 0;
     padding-bottom: 0;
     //font-weight: bold;
-    font-family: Lato-Regular;
+    //font-family: Lato-Regular;
     //font-size: 2rem;
     line-height: 1;
 
@@ -171,6 +171,7 @@
 }
 
 .header-bar {
+    font-family: Lato-Regular;
     display: flex;
     justify-content: space-between;
     width: 100%;
