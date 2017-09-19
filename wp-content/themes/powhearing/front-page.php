@@ -13,6 +13,11 @@ get_header();
 
 <!-- solutions -->
 
+<div>
+    <?php get_template_part( 'template-parts/comp/solutions-home', 'detail' ); ?>
+</div>
+
+
 <!-- percentage -->
 
 
