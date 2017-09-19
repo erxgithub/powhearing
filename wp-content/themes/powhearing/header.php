@@ -44,7 +44,7 @@
 						the_custom_logo();
 					} ?>
 				</div>
-				<div stylr="width: 50%;">
+				<div style="width: 50%;">
 					<?php foundationpress_top_bar_r(); ?>
 				</div>
 			</div>
