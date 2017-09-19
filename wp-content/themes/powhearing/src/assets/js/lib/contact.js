@@ -7,4 +7,3 @@ $(document).mouseup(function (e) {
       container.removeClass('is-active');
     }
 });
-
