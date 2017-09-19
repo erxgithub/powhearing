@@ -10,13 +10,13 @@
 
 .footer {
   //@include xy-grid-container;
-  @include xy-grid;//
+ // @include xy-grid;//
   padding: rem-calc(30) 0;
-  display:inline-block;
+  display:flex;
   flex-wrap:wrap;
 
   article {
-    @include xy-cell(auto);
+    //@include xy-cell(auto);
     margin: 0;
   }
 
@@ -28,13 +28,16 @@
 }
 
 .privacypolicy{
-  background-color:grey;
+  background-color:#444444;
   color:white;
   text-align:center;
+  padding: 1rem 0 1rem 0;
 }
 
 #media_image-2{
   width:50%;
+  padding-left: 2rem;
+  padding-bottom: 10rem;
 }
 
 #custom_html-2{
@@ -44,4 +47,65 @@
 #custom_html-3{
   width:100%;
 
+}
+
+// for POW HEARING logo, site links, and contact section, common class
+.bottom1 {
+  //background-color: salmon;
+}
+
+// for POW HEARING logo
+.footerimage {
+  padding-top: 1rem;
+
+}
+
+// for site links and contact section
+.contact-links {
+  //background-color: lightblue;
+  padding-bottom: 5rem;
+}
+
+.footer-links {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+// .footerimage {
+//   height: 40px;
+// }
+
+a{
+
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 1240px) {
+
+  .footer{
+    
+  }
+ 
+ .contact-links{
+  display: flex;
+
+ }
+
+ .bottom1{
+  display: flex;
+ }
+
+ ul.contact{
+
+  position: relative;
+  left:5rem;
+ }
+
+ul.sitelinks{
+
+  position: relative;
+  right:5rem;
+}
+ 
 }

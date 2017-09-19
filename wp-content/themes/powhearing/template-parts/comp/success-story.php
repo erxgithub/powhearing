@@ -2,7 +2,7 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
     <?php
-        $stories = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
+        $stories = get_post_meta(get_the_ID(), "success_repeat_group");
         //var_dump($stories);
         //echo nl2br("\n");
 
@@ -12,13 +12,13 @@
 
             <div class="success-story">
                 <div>
-                    <h1>Success Story: <?php echo $story["title"].nl2br("\n");?></h1>
+                    <h1>Success Story: <?php echo $story["title"]; ?></h1>
                 </div>
                 <div>
                     <img src="<?php echo $story["image"]; ?>" />
                 </div>
                 <div>
-                    <p><?php echo $story["content"].nl2br("\n"); ?></p>
+                    <p><?php echo $story["content"]; ?></p>
                 </div>
             </div>
 

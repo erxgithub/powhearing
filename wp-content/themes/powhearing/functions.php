@@ -66,8 +66,8 @@ function themename_custom_logo_setup() {
     );
     add_theme_support( 'custom-logo', $defaults );
 }
-
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
 
 // footer
 

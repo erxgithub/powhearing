@@ -36,13 +36,15 @@
 		</div> -->
 
 		<nav class="site-navigation top-bar" role="navigation">
+
 			<div class="header-bar">
 				<div>
+
 					<?php if ( function_exists( 'the_custom_logo' ) ) {
 						the_custom_logo();
 					} ?>
 				</div>
-				<div>
+				<div style="width: 50%;">
 					<?php foundationpress_top_bar_r(); ?>
 				</div>
 			</div>
