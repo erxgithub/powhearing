@@ -73,7 +73,8 @@
     padding-top: 0;
     padding-bottom: 0;
     //font-weight: bold;
-    font-size: 1.5rem;
+    //font-family: Lato-Regular;
+    //font-size: 2rem;
     line-height: 1;
 
     &:hover:not(.button) {
@@ -95,12 +96,101 @@
       //border-right: 1px solid #4e4e4e;
   }
 
-  .dropdown.menu .submenu { border: 0; }
+  .dropdown ul li {
+      border-style: solid;
+      border-width: 1px;
+      border-color: lightgrey;
+  }
+
+  .dropdown.menu .submenu {
+      //border: 0;
+  }
+
   .dropdown.menu .has-submenu.is-down-arrow a {
       //padding-right: 1rem;
   }
-  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
-  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+  .dropdown.menu .has-submenu.is-down-arrow > a::after {
+      //border: 0;
+  }
+
+  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+    .header-bar {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .top-bar .menu a {
+      font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    .header-bar {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .top-bar .menu a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .header-bar {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .top-bar .menu a {
+      font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .header-bar {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .top-bar .menu a {
+      font-size: 2rem;
+    }
+}
+
+.header-bar {
+    font-family: Lato-Regular;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //margin: 2rem 10rem 2rem 10rem;
+    //margin: 10%;
+}
+
+.header-bar div:nth-child(1) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header-bar div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    //padding-top: 2rem;
 }
 
 .site-navigation {
@@ -120,4 +210,30 @@
 
 .nav-next {
   float:right;
+}
+
+//banner
+
+@media only screen and (max-width: 599px) {
+    .banner-section {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .banner-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .banner-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.banner-section img {
+    min-width: 100%;
 }
