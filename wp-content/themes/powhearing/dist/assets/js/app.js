@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -4621,6 +4621,8 @@ var _whatInput2 = _interopRequireDefault(_whatInput);
 var _foundationSites = __webpack_require__(20);
 
 var _foundationSites2 = _interopRequireDefault(_foundationSites);
+
+__webpack_require__(40);
 
 __webpack_require__(39);
 
@@ -12415,6 +12417,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 
 
+// closes the panel on click outside
+$(document).mouseup(function (e) {
+  var container = $('#contact-panel');
+  if (!container.is(e.target) // if the target of the click isn't the container...
+  && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      container.removeClass('is-active');
+    }
+});
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -12433,7 +12452,7 @@ _jquery2.default.ajax({
 });
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(19);
