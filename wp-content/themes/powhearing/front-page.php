@@ -1,3 +1,4 @@
+<?php /* Template Name: front-page */ ?>
 <?php
 
 echo "front-page.php <br>";
