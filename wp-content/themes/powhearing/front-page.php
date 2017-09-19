@@ -16,8 +16,9 @@ get_header();
       <img src="<?php echo $bottom; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 </div>
 
+<!-- About section-->
+<?php
+get_template_part( 'template-parts/comp/modal-form', 'detail' );
 
-
-<?php get_footer(); ?>
-
-
+get_footer(); 
+?>
