@@ -13,6 +13,7 @@
         ?>
 
         <?php
+    if ($scenarios[0] !== null) {
         foreach($device_solutions[0] as $key => $device_solution)
         {
         ?>
@@ -28,6 +29,7 @@
 
         <?php
         }
+    }
         ?>
 
 <?php endwhile; // end of the loop. ?>

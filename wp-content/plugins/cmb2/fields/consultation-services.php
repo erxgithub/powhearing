@@ -1,14 +1,16 @@
 <?php
-add_action( 'cmb2_admin_init', 'cmb2_consultaiton_services');
+add_action( 'cmb2_admin_init', 'cmb2_consultation_services');
 /**
  * Define the metabox and field configurations.
  */
-function cmb2_consultaiton_services() {
+function cmb2_consultation_services() {
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_consultaiton_services_';
+    $prefix = '_consultation_services_';
     $cmb = new_cmb2_box( array(
         'id'           => 'consultation-services',
-        'title'        => 'Consultaiton Services',
+
+        'title'        => 'Consultation Services',
+
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
@@ -46,6 +48,12 @@ function cmb2_consultaiton_services() {
     $cmb->add_group_field( $group_field_id, array(
         'name' => 'Title Consultation Services',
         'id'   => 'title-cs',
+        'type' => 'text',
+    ) );
+
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Content Consultation Services',
+        'id'   => 'title-content',
         'type' => 'text',
     ) );
 }
