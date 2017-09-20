@@ -6,7 +6,7 @@ get_header();
 ?>
 <!-- LINKS FOR MODALS -->
 <!-- <p><button class="button" data-open="modalProducts">Click me for a modal</button></p> -->
-<!-- <p><button class="button" data-open="modalForm">Let's Talk</button></p> -->
+<p><button class="button" data-open="modalForm">Let's Talk</button></p>
 
 
 

@@ -34,17 +34,17 @@
   padding: 1rem 0 1rem 0;
 }
 
-#media_image-2{
+footer.footer .widget_media_image{
   width:50%;
   padding-left: 2rem;
   padding-bottom: 10rem;
 }
 
-#custom_html-2{
+footer.footer .widget_custom_html{
   width:50%;
 }
 
-#custom_html-3{
+footer.footer .widget_custom_html:last-child{
   width:100%;
 
 }
@@ -109,3 +109,5 @@ ul.sitelinks{
 }
  
 }
+
+
