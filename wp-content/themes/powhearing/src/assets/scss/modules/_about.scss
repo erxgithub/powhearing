@@ -1,0 +1,134 @@
+.gray-back-color{
+    background-color: #f2f2f2;
+}
+
+.about-title{
+    font-weight: bold;
+    font-family: Lato-Bold;
+    padding-bottom: 2rem;
+}
+
+.about-image1{
+    padding-bottom: 1rem;
+}
+
+.about-content{
+    padding-bottom: 2rem;
+    font-family: Lato-Regular;
+}
+
+
+// mobile
+@media only screen and (max-width: 599px) {
+    .about-box {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+    }
+    .about-image2{
+        visibility: hidden;
+        width: 0vw;
+    }
+}
+
+// tablet
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .about-div{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .div-about-image{
+        width: 40%;
+    }
+    .about-div-box{
+        width: 60%;
+    }
+    
+    .about-box {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        padding-bottom: 0rem;
+        margin-left: 1rem;
+    }
+
+    .about-content {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .about-image1{
+        visibility: hidden;
+        width: 0vw;
+    }
+    .about-image2{
+        visibility: visible;
+        min-width: 100%;
+        
+    }
+
+    .button{
+        margin-left: 1rem;
+    }
+   
+}
+
+// desktop
+@media only screen and (min-width: 1240px) {
+    .about-div{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .about-box {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        padding-bottom: 0rem;
+        margin-left: 1rem;
+    }
+
+    .about-image1{
+        visibility: hidden;
+        width: 0vw;
+    }
+
+    .button{
+        margin-left: 1rem;
+    }
+    .about-image2{
+        height: 41vh;
+        width: 41vw;
+        
+    }
+}
