@@ -8,7 +8,9 @@ function cmb2_consultation_services() {
     $prefix = '_consultation_services_';
     $cmb = new_cmb2_box( array(
         'id'           => 'consultation-services',
+
         'title'        => 'Consultation Services',
+
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
