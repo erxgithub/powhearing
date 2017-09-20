@@ -9,14 +9,11 @@ get_header();
 <p><button class="button" data-open="modalForm">Let's Talk</button></p>
 
 
-
-<!-- percentage -->
-
-
 <!-- what we do -->
 <div>
     <?php get_template_part( 'template-parts/comp/what-we-do', 'detail' );?>
-</div>   
+</div> 
+
 
 <!-- solutions -->
 
@@ -24,7 +21,16 @@ get_header();
     <?php get_template_part( 'template-parts/comp/solutions-home', 'detail' ); ?>
 </div>
 
+
+<!-- percentage -->
+
+
+
 <!-- About section-->
+
+<div class="gray-back-color">
+    <?php get_template_part( 'template-parts/comp/about', 'detail' ); ?>
+</div>
 
 
 <!-- thank you section -->
