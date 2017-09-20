@@ -1,4 +1,4 @@
-<!-- Description component that will present description for each page -->
+<!-- What we do component that will present what we do for front page -->
 
 
 <?php echo "what-we-do.php <br>";?>

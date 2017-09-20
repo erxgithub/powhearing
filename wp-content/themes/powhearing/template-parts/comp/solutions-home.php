@@ -11,7 +11,9 @@ while ( have_posts() ) : the_post();
     //var_dump($image);
     //echo nl2br("\n");
 
+
     if ($solutions[0] !== null) {
+
         foreach($solutions[0] as $key => $solution)
         {
             ?>
@@ -67,5 +69,7 @@ while ( have_posts() ) : the_post();
             <?php
         }
     }
+
 endwhile; // end of the loop.
 ?>
+
