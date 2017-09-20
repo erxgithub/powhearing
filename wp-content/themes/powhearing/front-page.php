@@ -4,32 +4,14 @@
 echo "front-page.php <br>";
 get_header();
 ?>
-
-
 <!-- percentage -->
-<?php
-if(get_field('percentage_1'))
-{
-	echo '<p>' . get_field('percentage_1') . '</p>';
-}
+<?php include('template-parts/comp/percentage-comp.php'); ?>
 
-if(get_field('content_1'))
-{
-	echo '<p>' . get_field('content_1') . '</p>';
-}
+<?php while ( have_posts() ) : the_post();
+    get_template_part( 'template-parts/comp/percentage-comp.php', 'detail' );
+endwhile;?>
 
-if(get_field('percentage_2'))
-{
-	echo '<p>' . get_field('percentage_2') . '</p>';
-}
-
-if(get_field('content_2'))
-{
-	echo '<p>' . get_field('content_2') . '</p>';
-}
-?>
-
-
+<?php echo "template part ended"; ?>
 <!-- about section -->
 
 <?php
