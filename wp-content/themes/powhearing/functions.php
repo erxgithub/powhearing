@@ -68,6 +68,10 @@ function themename_custom_logo_setup() {
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
+// Enable support for Post Thumbnails on posts and pages.
+
+add_theme_support( 'post-thumbnails' );
+add_image_size ( 'square', 500, 500, true );
 
 // footer
 
