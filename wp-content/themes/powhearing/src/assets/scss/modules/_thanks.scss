@@ -1,0 +1,122 @@
+.thanks-section {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks-quote1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.thanks-quote2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.thanks-text {
+    margin: 0 10% 0 10%;
+}
+
+.thanks-text h1 {
+    font-family: Paprika-Regular;
+}
+
+.thanks-text h6 {
+    font-family: Lato-Regular;
+}
+
+.thanks-text p {
+    font-family: Lato-Italic;
+}
+
+@media only screen and (max-width: 599px) {
+    .thanks-section {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .thanks-box {
+        width: 80%;
+    }
+
+    .thanks-box img {
+        height: 2.5rem;
+    }
+
+    .thanks-text h1 {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+
+    .thanks-text h6 {
+        font-size: 1.5rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .thanks-text p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .thanks-section {
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .thanks-box {
+        width: 65%;
+    }
+
+    .thanks-box img {
+        height: 3.5rem;
+    }
+
+    .thanks-text h1 {
+        font-size: 4rem;
+        padding-top: 1rem;
+    }
+
+    .thanks-text h6 {
+        font-size: 1.75rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .thanks-text p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .thanks-section {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .thanks-box {
+        width: 50%;
+    }
+
+    .thanks-box img {
+        height: 5rem;
+    }
+
+    .thanks-text h1 {
+        font-size: 5rem;
+        padding-top: 1rem;
+    }
+
+    .thanks-text h6 {
+        font-size: 2rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .thanks-text p {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+}

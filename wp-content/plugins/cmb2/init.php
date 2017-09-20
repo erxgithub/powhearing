@@ -198,3 +198,4 @@ include('fields/page-banner.php');
 include('fields/description.php');
 include('fields/scenario-section.php');
 include('fields/success-stories.php');
+include('fields/thanks-section.php');
