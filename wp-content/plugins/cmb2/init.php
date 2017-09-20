@@ -201,3 +201,5 @@ include('fields/success-stories.php');
 include('fields/product-modal.php');
 include('fields/solutions.php');
 include('fields/what-we-do.php');
+include('fields/device-solutions.php');
+include('fields/consultation-services.php');
