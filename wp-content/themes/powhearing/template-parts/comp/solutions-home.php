@@ -6,6 +6,7 @@
         //var_dump($solutions);
         //echo nl2br("\n");
 
+        if ($solutions[0] !== null) {
         foreach($solutions[0] as $key => $solution)
         {
             ?>
@@ -49,6 +50,7 @@
 
             <?php
         }
+    }
 
     ?>
 
