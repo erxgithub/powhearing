@@ -38,7 +38,7 @@ function cmb2_solutions() {
     ) );
 
     $cmb->add_group_field( $group_field_id, array(
-		'name' => 'Image Organization',
+		'name' => 'Image Organization (Min. 500x500)',
 		'id'   => 'image-organization',
 		'type' => 'file',
 	) );
@@ -50,7 +50,7 @@ function cmb2_solutions() {
     ) );
 
         $cmb->add_group_field( $group_field_id, array(
-        'name' => 'Image Live Events',
+        'name' => 'Image Live Events (Min. 500x500)',
         'id'   => 'image-le',
         'type' => 'file',
     ) );
@@ -62,7 +62,7 @@ function cmb2_solutions() {
     ) );
 
         $cmb->add_group_field( $group_field_id, array(
-        'name' => 'Image Individual',
+        'name' => 'Image Individual (Min. 500x500)',
         'id'   => 'image-individual',
         'type' => 'file',
     ) );

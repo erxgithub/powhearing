@@ -6615,6 +6615,7 @@ a {
     right: 5rem; } }
 
 
+
 .gray-back-color {
   background-color: #f2f2f2; }
 
@@ -6881,7 +6882,6 @@ body#tinymce {
     .contact-panel {
       width: 100%;
       right: 0; } }
-
 
 .contact-panel-button {
   background: #0a0a0a;
@@ -7204,6 +7204,84 @@ body#tinymce {
     margin-left: 2%;
     margin-right: 2%; } }
 
+.solutions-section {
+  background-color: #f2f2f2; }
+
+.solutions-section h1 {
+  font-family: Lato-Bold;
+  text-align: center;
+  padding-bottom: 2rem; }
+
+.solutions-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+.solutions-grid img {
+  min-width: 100%; }
+
+.solution-title {
+  background-color: #9e2f89;
+  text-align: center; }
+
+.solution-title p {
+  font-family: Lato-Bold;
+  font-size: 2.25rem;
+  color: white;
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0; }
+
+@media only screen and (max-width: 599px) {
+  .solutions-section {
+    padding: 10% 5% 10% 5%; }
+  .solutions-section h1 {
+    font-size: 1.75rem; }
+  .solution-title p {
+    font-size: 1.5rem; }
+  .solution-box1 {
+    width: 90%;
+    margin: 1%; }
+  .solution-box2 {
+    width: 44%;
+    margin: 1%;
+    padding-top: 1.25rem; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+  .solutions-section {
+    padding: 10% 5% 10% 5%; }
+  .solutions-section h1 {
+    font-size: 2.25rem; }
+  .solution-title p {
+    font-size: 1.5rem; }
+  .solution-box1 {
+    width: 90%;
+    margin: 1%; }
+  .solution-box2 {
+    width: 44%;
+    margin: 1%;
+    padding-top: 1.25rem; } }
+
+@media only screen and (min-width: 1240px) {
+  .solutions-section {
+    padding: 5%; }
+  .solutions-section h1 {
+    font-size: 3rem; }
+  .solution-title p {
+    font-size: 2.25rem; }
+  .solution-box1 {
+    width: 30%;
+    margin: 1%; }
+  .solution-box2 {
+    width: 30%;
+    margin: 1%; } }
+
 .sites-button {
   background: #1779ba;
   font-size: 1.25rem;
@@ -7492,3 +7570,4 @@ body#tinymce {
   .kitchen-sink-grid .grid-x .cell:nth-child(even) {
     background: #1779ba;
     color: #fefefe; }
+
