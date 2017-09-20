@@ -1,14 +1,14 @@
 <?php
-add_action( 'cmb2_admin_init', 'cmb2_consultaiton_services');
+add_action( 'cmb2_admin_init', 'cmb2_consultation_services');
 /**
  * Define the metabox and field configurations.
  */
-function cmb2_consultaiton_services() {
+function cmb2_consultation_services() {
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_consultaiton_services_';
+    $prefix = '_consultation_services_';
     $cmb = new_cmb2_box( array(
-        'id'           => 'consultaiton-services',
-        'title'        => 'Consultaiton Services',
+        'id'           => 'consultation-services',
+        'title'        => 'Consultation Services',
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
@@ -19,7 +19,7 @@ function cmb2_consultaiton_services() {
         'show_names'   => true, // Show field names on the left
     ) );
     $group_field_id = $cmb->add_field( array(
-        'id'          => 'consultaiton_services_repeat_group',
+        'id'          => 'consultation_services_repeat_group',
         'type'        => 'group',
         // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
@@ -46,6 +46,12 @@ function cmb2_consultaiton_services() {
     $cmb->add_group_field( $group_field_id, array(
         'name' => 'Title Consultation Services',
         'id'   => 'title-cs',
+        'type' => 'text',
+    ) );
+
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Content Consultation Services',
+        'id'   => 'title-content',
         'type' => 'text',
     ) );
 }
