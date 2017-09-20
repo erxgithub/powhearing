@@ -7,7 +7,7 @@ function cmb2_consultaiton_services() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_consultaiton_services_';
     $cmb = new_cmb2_box( array(
-        'id'           => 'consultaiton-services',
+        'id'           => 'consultation-services',
         'title'        => 'Consultaiton Services',
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
@@ -19,7 +19,7 @@ function cmb2_consultaiton_services() {
         'show_names'   => true, // Show field names on the left
     ) );
     $group_field_id = $cmb->add_field( array(
-        'id'          => 'consultaiton_services_repeat_group',
+        'id'          => 'consultation_services_repeat_group',
         'type'        => 'group',
         // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
