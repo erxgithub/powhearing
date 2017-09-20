@@ -6321,6 +6321,15 @@ p.wp-caption-text {
   font-family: Lato-Regular;
   src: url("../fonts/Lato-Regular.ttf"); }
 
+@font-face {
+  font-family: Lato-Italic;
+  src: url("../fonts/Lato-Italic.ttf"); }
+
+/* Paprika fonts */
+@font-face {
+  font-family: Paprika-Regular;
+  src: url("../fonts/Paprika-Regular.ttf"); }
+
 @media print, screen and (min-width: 40em) {
   .mobile-menu,
   .site-title-bar {
@@ -6610,6 +6619,9 @@ body#tinymce {
   max-width: 75rem;
   padding: 1.25rem !important; }
 
+
+.thanks-section {
+
 .contact-panel-button {
   background: #0a0a0a;
   color: #fefefe;
@@ -6681,19 +6693,100 @@ body#tinymce {
       right: 0; } }
 
 .thx_container {
+
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.quote_logo {
-  height: 30vh;
-  width: 10vw;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.thanks-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-.thx_box {
-  width: 50%; }
+.thanks-quote1 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.thanks-quote2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.thanks-text {
+  margin: 0 10% 0 10%; }
+
+.thanks-text h1 {
+  font-family: Paprika-Regular; }
+
+.thanks-text h6 {
+  font-family: Lato-Regular; }
+
+.thanks-text p {
+  font-family: Lato-Italic; }
+
+@media only screen and (max-width: 599px) {
+  .thanks-section {
+    padding: 2rem 0 2rem 0; }
+  .thanks-box {
+    width: 80%; }
+  .thanks-box img {
+    height: 2.5rem; }
+  .thanks-text h1 {
+    font-size: 2.5rem;
+    padding-top: 1rem; }
+  .thanks-text h6 {
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem; }
+  .thanks-text p {
+    font-size: 1.5rem;
+    line-height: 2rem; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+  .thanks-section {
+    padding: 2.5rem 0 2.5rem 0; }
+  .thanks-box {
+    width: 65%; }
+  .thanks-box img {
+    height: 3.5rem; }
+  .thanks-text h1 {
+    font-size: 4rem;
+    padding-top: 1rem; }
+  .thanks-text h6 {
+    font-size: 1.75rem;
+    padding-bottom: 1.25rem; }
+  .thanks-text p {
+    font-size: 2rem;
+    line-height: 2.5rem; } }
+
+@media only screen and (min-width: 1240px) {
+  .thanks-section {
+    padding: 3rem 0 3rem 0; }
+  .thanks-box {
+    width: 50%; }
+  .thanks-box img {
+    height: 5rem; }
+  .thanks-text h1 {
+    font-size: 5rem;
+    padding-top: 1rem; }
+  .thanks-text h6 {
+    font-size: 2rem;
+    padding-bottom: 1.25rem; }
+  .thanks-text p {
+    font-size: 2.25rem;
+    line-height: 3rem; } }
 
 .scenarios-section h1 {
   font-family: Lato-Bold;
@@ -7234,3 +7327,4 @@ body#tinymce {
   .kitchen-sink-grid .grid-x .cell:nth-child(even) {
     background: #1779ba;
     color: #fefefe; }
+

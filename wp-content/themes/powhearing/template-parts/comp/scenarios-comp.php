@@ -10,23 +10,23 @@
         $scenarios = get_post_meta(get_the_ID(), "scenarios_repeat_group");
         //var_dump($scenarios);
         //echo nl2br("\n");
-        ?>
 
-        <?php
-        foreach($scenarios[0] as $key => $scenario)
-        {
-        ?>
+        if ($scenarios[0] !== null) {
+            foreach($scenarios[0] as $key => $scenario)
+            {
+            ?>
 
-            <div class="scenario-box">
-                <div>
-                    <img src="<?php echo $scenario["image"]; ?>" />
+                <div class="scenario-box">
+                    <div>
+                        <img src="<?php echo $scenario["image"]; ?>" />
+                    </div>
+                    <div>
+                        <h2><?php echo $scenario["title"]; ?></h2>
+                    </div>
                 </div>
-                <div>
-                    <h2><?php echo $scenario["title"]; ?></h2>
-                </div>
-            </div>
 
-        <?php
+            <?php
+            }
         }
 
         /* echo $story[0][0]["title"].nl2br("\n");?>

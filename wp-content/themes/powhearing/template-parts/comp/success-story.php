@@ -6,23 +6,25 @@
         //var_dump($stories);
         //echo nl2br("\n");
 
-        foreach($stories[0] as $key => $story)
-        {
-            ?>
+        if ($stories[0] !== null) {
+            foreach($stories[0] as $key => $story)
+            {
+                ?>
 
-            <div class="success-story">
-                <div>
-                    <h1>Success Story: <?php echo $story["title"]; ?></h1>
+                <div class="success-story">
+                    <div>
+                        <h1>Success Story: <?php echo $story["title"]; ?></h1>
+                    </div>
+                    <div>
+                        <img src="<?php echo $story["image"]; ?>" />
+                    </div>
+                    <div>
+                        <p><?php echo $story["content"]; ?></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $story["image"]; ?>" />
-                </div>
-                <div>
-                    <p><?php echo $story["content"]; ?></p>
-                </div>
-            </div>
 
-            <?php
+                <?php
+            }
         }
 
         /* echo $story[0][0]["title"].nl2br("\n");?>
