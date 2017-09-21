@@ -1,3 +1,6 @@
+<!--  component that will  -->
+
+
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_product_modal');
 /**
