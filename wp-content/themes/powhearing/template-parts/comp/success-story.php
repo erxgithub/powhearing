@@ -23,7 +23,7 @@
                     </div>
                     
                 </div>
-                <div class="flex flex-center">
+                <div class="about-div-box flex flex-center  ">
                 <p><button class="button" data-open="modalForm">Let's Talk</button></p>
                 </div> 
 
