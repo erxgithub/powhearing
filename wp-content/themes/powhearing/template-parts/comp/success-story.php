@@ -21,7 +21,11 @@
                     <div>
                         <p><?php echo $story["content"]; ?></p>
                     </div>
+                    
                 </div>
+                <div class="flex flex-center">
+                <p><button class="button" data-open="modalForm">Let's Talk</button></p>
+                </div> 
 
                 <?php
             }

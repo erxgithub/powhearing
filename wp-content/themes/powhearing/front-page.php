@@ -25,7 +25,6 @@ get_header(); ?>
     <?php get_template_part( 'template-parts/comp/about', 'detail' ); ?>
 </div>
 
-
 <!-- thank you section -->
 <?php include 'template-parts/comp/thanks.php';?>
 
