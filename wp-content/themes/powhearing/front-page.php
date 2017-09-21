@@ -9,7 +9,7 @@ get_header(); ?>
 <!-- what we do -->
 <div>
     <?php get_template_part( 'template-parts/comp/what-we-do', 'detail' );?>
-</div> 
+</div>
 
 <!-- solutions -->
 
@@ -18,9 +18,7 @@ get_header(); ?>
 </div>
 
 <!-- percentage -->
-<div>
-  <?php get_template_part( 'template-parts/comp/percentage-comp.php', 'detail' );?>
-</div>
+<?php include 'template-parts/comp/percentage-comp.php';?>
 
 <!-- About section-->
 <div class="gray-back-color">
