@@ -1,6 +1,6 @@
 <!-- <p><button class="button" data-open="modalProducts">Click me for a modal</button></p> -->
 
-<div class="reveal product-modal-container" id="modalInfo" data-reveal>
+<div class="reveal" id="modalInfo" data-reveal>
 
 	<!-- <?php echo 'modal-products.php'.nl2br("\n"); ?> -->
 	<div>
