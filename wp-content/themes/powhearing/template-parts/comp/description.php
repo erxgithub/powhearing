@@ -1,10 +1,6 @@
 <!-- Description component that will present description for each page -->
-<!-- Description component that will present description for each page -->
-
 
 <?php echo "description.php <br>";?>
-
-//while loop to get description of organizations
 
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="box">
