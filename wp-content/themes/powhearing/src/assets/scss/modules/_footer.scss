@@ -34,20 +34,24 @@
   padding: 1rem 0 1rem 0;
 }
 
-footer.footer .widget_media_image{
-  width:50%;
-  padding-left: 2rem;
-  padding-bottom: 10rem;
+footer {
+  display: flex;
 }
 
-footer.footer .widget_custom_html{
-  width:50%;
-}
+// footer.footer .widget_media_image {
+//   width:50%;
+//   padding-left: 2rem;
+//   padding-bottom: 10rem;
+// }
 
-footer.footer .widget_custom_html:last-child{
-  width:100%;
+// footer.footer .widget_nav_menu {
+//   width:50%;
+// }
 
-}
+// footer.footer .wwidget_custom_html{
+//   width:100%;
+
+// }
 
 // for POW HEARING logo, site links, and contact section, common class
 .bottom1 {
@@ -83,31 +87,23 @@ a{
 
 @media only screen and (min-width: 1240px) {
 
-  .footer{
-    
+  footer {
+    flex-basis: 0;
   }
  
- .contact-links{
+}
+
+
+#nav_menu-2 {
   display: flex;
-
- }
-
- .bottom1{
-  display: flex;
- }
-
- ul.contact{
-
-  position: relative;
-  left:5rem;
- }
-
-ul.sitelinks{
-
-  position: relative;
-  right:5rem;
+  flex-direction: column;
 }
  
+#menu-footer-menu {
+  display: flex;
+  flex-direction: column;
 }
 
-
+#custom_html-3 {
+  display: flex;
+}

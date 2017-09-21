@@ -359,3 +359,10 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
+
+// This theme uses wp_nav_menu() in two locations.  
+register_nav_menus( array(  
+  'primary' => __( 'Primary Navigation', 'twentyten' ),  
+  'secondary' => __('Secondary Navigation', 'twentyten')  
+) );
