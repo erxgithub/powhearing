@@ -12,7 +12,7 @@ function cmb2_description() {
        'id'           => 'description_heading',
        'title'        => 'Description',
        'object_types' => array( 'page' ), // post type
-       'show_on'      => array( 'key' => 'page-template', 'value' => ['page-organizations.php', 'page-individuals.php','live-events-page.php'] ),
+       'show_on'      => array( 'key' => 'page-template', 'value' => ['page-templates/page-organizations.php', 'page-templates/page-individuals.php','page-templates/live-events-page.php'] ),
        'context'      => 'normal', //  'normal', 'advanced', or 'side'
        'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
        'show_names'   => true, // Show field names on the left
