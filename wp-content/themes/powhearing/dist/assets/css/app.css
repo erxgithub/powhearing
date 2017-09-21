@@ -6627,9 +6627,11 @@ a {
   height: 50%;
   min-width: 100%; }
 
+
 .banner h1 {
   font-family: Lato-Bold;
   font-size: 2.5rem;
+
   width: 50%;
   -webkit-flex: display;
       -ms-flex: display;
@@ -6640,10 +6642,12 @@ a {
   font-family: Lato-Regular;
   font-size: 1.25rem; }
 
+
 .border {
   border-style: solid;
   border-color: white;
   width: 7rem; }
+
 
 .box1 {
   padding-left: 6rem;
@@ -7647,5 +7651,4 @@ body#tinymce {
   .kitchen-sink-grid .grid-x .cell:nth-child(even) {
     background: #1779ba;
     color: #fefefe; }
-
 
