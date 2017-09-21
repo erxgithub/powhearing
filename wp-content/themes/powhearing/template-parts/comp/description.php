@@ -1,4 +1,5 @@
 <!-- Description component that will present description for each page -->
+<!-- Description component that will present description for each page -->
 
 
 <?php echo "description.php <br>";?>
