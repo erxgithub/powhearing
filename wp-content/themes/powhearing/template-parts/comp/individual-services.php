@@ -14,11 +14,9 @@
                     <h2><?php echo $individual_service["title"]; ?></h2>
                 </div>
 
-                 <a href="#">
                     <div>
                         <img src="<?php echo $individual_service["image-cs"]; ?>" />
                     </div>
-                </a>
 
                 <div>
                         <button class="button modalInfo" 

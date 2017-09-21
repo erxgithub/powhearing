@@ -1,11 +1,5 @@
 <?php echo 'device-solutions-comp.php'.nl2br("\n"); ?>
 
-<div class="device-solutions">
-    <div>
-        <h2><?php echo $device_solution["title-device-solutions"]; ?></h2>
-    </div>
-
-    <div class="device-grid">
 
 <?php while ( have_posts() ) : the_post(); ?>
         <?php
@@ -13,26 +7,33 @@
         ?>
 
         <?php
-    if ($scenarios[0] !== null) {
+    if ($device_solutions[0] !== null) {
         foreach($device_solutions[0] as $key => $device_solution)
         {
         ?>
 
-            <div class="device-box">
+            <div class="device-solutions-products">
                 <div>
-                    <img src="<?php echo $device_solution["image-device-solutions"]; ?>" />
+                    <h2><?php echo $device_solution["title-device-solutions"]; ?></h2>
                 </div>
-                <div>
-                    <h4><?php echo $device_solution["device-name"]; ?></h4>
-                </div>
-            </div>
 
+                    <div>
+                        <img src="<?php echo $device_solution["image-device-solutions"]; ?>" />
+                    </div>
+
+                <div>
+                    <button class="button modalInfo" 
+                        data-open="modalInfo" data-title="<?php echo $device_solution["device-name"]?>"
+                        data-img="<?php echo $device_solution["image-device-solutions"]?>" data-content="<?php echo $device_solution["cs-title-content"]?>">
+
+                            <?php echo $device_solution["device-name"]; ?>
+                    </button>
+                </div>
+            </div>    
+        
         <?php
         }
     }
         ?>
 
 <?php endwhile; // end of the loop. ?>
-    </div>
-
-</div>
