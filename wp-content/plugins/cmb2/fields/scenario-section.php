@@ -14,7 +14,7 @@ function cmb2_scenarios() {
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
-            'value' => array('page-organizations.php', 'live-events-page.php')
+            'value' => array('page-templates/page-organizations.php', 'page-templates/live-events-page.php')
          ),
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
