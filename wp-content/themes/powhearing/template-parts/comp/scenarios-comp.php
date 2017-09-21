@@ -10,6 +10,7 @@
         $scenarios = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
         var_dump($scenarios);
         //echo nl2br("\n");
+        //
 
         if ($scenarios[0] !== null) {
             foreach($scenarios[0] as $key => $scenario)
