@@ -7,8 +7,8 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
         <?php
-        $scenarios = get_post_meta(get_the_ID(), "scenarios_repeat_group");
-        //var_dump($scenarios);
+        $scenarios = get_post_meta(get_the_ID(), "wiki_test_repeat_group");
+        var_dump($scenarios);
         //echo nl2br("\n");
 
         if ($scenarios[0] !== null) {
