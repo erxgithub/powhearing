@@ -6,6 +6,7 @@ add_action( 'cmb2_admin_init', 'cmb2_solutions');
 function cmb2_solutions() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_solutions_';
+
     $cmb = new_cmb2_box( array(
         'id'           => 'solutions',
         'title'        => 'Solutions',
@@ -18,6 +19,7 @@ function cmb2_solutions() {
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
         'show_names'   => true, // Show field names on the left
     ) );
+
     $group_field_id = $cmb->add_field( array(
         'id'          => 'solutions_repeat_group',
         'type'        => 'group',
@@ -49,7 +51,13 @@ function cmb2_solutions() {
         'type' => 'text',
     ) );
 
-        $cmb->add_group_field( $group_field_id, array(
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Link Page Name',
+        'id'   => 'link-organization',
+        'type' => 'text',
+    ) );
+
+    $cmb->add_group_field( $group_field_id, array(
         'name' => 'Image Live Events (Min. 500x500)',
         'id'   => 'image-le',
         'type' => 'file',
@@ -61,7 +69,13 @@ function cmb2_solutions() {
         'type' => 'text',
     ) );
 
-        $cmb->add_group_field( $group_field_id, array(
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Link Page Name',
+        'id'   => 'link-le',
+        'type' => 'text',
+    ) );
+
+    $cmb->add_group_field( $group_field_id, array(
         'name' => 'Image Individual (Min. 500x500)',
         'id'   => 'image-individual',
         'type' => 'file',
@@ -73,6 +87,10 @@ function cmb2_solutions() {
         'type' => 'text',
     ) );
 
-
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Link Page Name',
+        'id'   => 'link-individual',
+        'type' => 'text',
+    ) );
 }
 ?>

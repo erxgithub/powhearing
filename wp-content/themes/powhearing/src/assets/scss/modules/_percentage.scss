@@ -6,21 +6,23 @@
 	min-width: 100%;
 }
 
-h1{
-	font-size: 300%;
+.banner h1{
+	font-family: Lato-Bold;
+	font-size: 2.5rem;
 	width:50%;
 	flex: display;
 	padding-left: 1rem;
 }
 
-h5{
-	font-size: 150%;
+.banner h5{
+	font-family: Lato-Regular;
+	font-size: 1.25rem;
 }
 
 .border{
 	border-style: solid;
 	border-color: white;
-	width:8rem;	
+	width: 7rem;
 
 }
 
@@ -29,7 +31,7 @@ h5{
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 
-	
+
 }
 
 .box1 h5{
@@ -53,17 +55,18 @@ h5{
 	height: 100%;
 }
 
-h1{
-	font-size: 500%;
+.banner h1{
+	font-size: 6rem;
 }
 
-h5{
-	font-size: 300%;
+.banner h5{
+	font-size: 2.5rem;
+	width: 50%;
 }
 
 .border{
 
-	width: 12rem;
+	width: 14rem;
 }
 
 .box1{
