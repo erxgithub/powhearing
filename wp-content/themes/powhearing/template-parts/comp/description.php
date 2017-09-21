@@ -6,6 +6,10 @@ echo "description.php <br>";
 
 //while loop to get description of organizations
 
+// please help
+// Or kill me
+// love, this page template
+
 if(is_page('organizations', 'page')){ ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
@@ -24,9 +28,9 @@ if(is_page('organizations', 'page')){ ?>
                 </div>
                 <div class="flex flex-center">
                     <p><button class="button" data-open="modalForm">Let's Talk</button></p>
-                </div>    
+                </div>
             </div>
-            
+
     </div>
 
     <?php endwhile; // end of the loop. ?>
@@ -74,14 +78,14 @@ elseif (is_page('individuals' , 'page') ) {?>
                         <?php echo $blah[0][0]["title"];?>
                     </h1>
                 </div>
-                <div>    
+                <div>
                     <p class="desc-content">
                         <?php echo $blah[0][0]["content"];?>
                     </p>
                 </div>
                 <div class="flex flex-center">
                     <p><button class="button" data-open="modalForm">Let's Talk</button></p>
-                </div> 
+                </div>
             </div>
 
     </div>
