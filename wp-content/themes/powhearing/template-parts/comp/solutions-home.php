@@ -26,7 +26,7 @@ while ( have_posts() ) : the_post();
 
                     <!-- Organizations page link -->
                     <div class="solution-box1">
-                        <a href="#">
+                        <a href="<?php echo get_permalink( get_page_by_title( $solution['link-organization'] ) ); ?>">
                             <div>
                                 <!-- <img src="<?php //echo $solution["image-organization"]; ?>" /> -->
                                 <?php echo wp_get_attachment_image( $solution['image-organization_id'], 'square' ); ?>
@@ -39,7 +39,7 @@ while ( have_posts() ) : the_post();
 
                     <!-- Live Events page link -->
                     <div class="solution-box2">
-                        <a href="#">
+                        <a href="<?php echo get_permalink( get_page_by_title( $solution['link-le'] ) ); ?>">
                             <div>
                                 <!-- <img src="<?php //echo $solution["image-le"]; ?>" /> -->
                                 <?php echo wp_get_attachment_image( $solution["image-le_id"], 'square' ); ?>
@@ -52,7 +52,7 @@ while ( have_posts() ) : the_post();
 
                     <!-- Individuals page link -->
                     <div class="solution-box2">
-                        <a href="#">
+                        <a href="<?php echo get_permalink( get_page_by_title( $solution['link-individual'] ) ); ?>">
                             <div>
                                 <!-- <img src="<?php //echo $solution["image-individual"]; ?>" /> -->
                                 <?php echo wp_get_attachment_image( $solution["image-individual_id"], 'square' ); ?>
@@ -72,4 +72,3 @@ while ( have_posts() ) : the_post();
 
 endwhile; // end of the loop.
 ?>
-
