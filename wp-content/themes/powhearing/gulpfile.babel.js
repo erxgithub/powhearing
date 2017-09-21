@@ -28,8 +28,7 @@ function loadConfig() {
 // Enter URL of your local server here
 // Example: 'http://localhost:8888'
 
-
-var URL = 'localhost/powhearing';
+var URL = 'localhost:8888/powhearing';
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
