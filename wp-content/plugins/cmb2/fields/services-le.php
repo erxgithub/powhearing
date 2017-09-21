@@ -1,28 +1,25 @@
 <?php
-
-add_action( 'cmb2_admin_init', 'cmb2_device_solutions');
+add_action( 'cmb2_admin_init', 'cmb2_services_le');
 /**
  * Define the metabox and field configurations.
  */
-function cmb2_device_solutions() {
+function cmb2_services_le() {
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_scenario_';
-
+    $prefix = '_services_le_';
     $cmb = new_cmb2_box( array(
-        'id'           => 'device-solutions',
-        'title'        => 'device-solutions',
+        'id'           => 'services_le',
+        'title'        => 'Services Live Events',
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
-            'value' => array('page-organizations.php')
+            'value' => array('live-events-page.php')
          ),
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
         'show_names'   => true, // Show field names on the left
     ) );
-
     $group_field_id = $cmb->add_field( array(
-        'id'          => 'device_solutions_repeat_group',
+        'id'          => 'services_le_repeat_group',
         'type'        => 'group',
         // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
@@ -35,28 +32,27 @@ function cmb2_device_solutions() {
     ) );
 
     $cmb->add_group_field( $group_field_id, array(
-        'name' => 'Title Device Solutions',
-        'id'   => 'title-device-solutions',
+        'name' => 'Live Events Title',
+        'id'   => 'title',
         'type' => 'text',
     ) );
 
     $cmb->add_group_field( $group_field_id, array(
-        'name' => 'Device Names',
-        'id'   => 'device-name',
-        'type' => 'text',
-    ) );
-
-    $cmb->add_group_field( $group_field_id, array(
-		'name' => 'Image Device Solutions',
-		'id'   => 'image-device-solutions',
+		'name' => 'Image Live Events',
+		'id'   => 'image-le',
 		'type' => 'file',
 	) );
 
     $cmb->add_group_field( $group_field_id, array(
-        'name' => 'Content Device Solutions',
-        'id'   => 'cs-title-content',
+        'name' => 'Title Live Events',
+        'id'   => 'title-le',
+        'type' => 'text',
+    ) );
+
+    $cmb->add_group_field( $group_field_id, array(
+        'name' => 'Content Live Events',
+        'id'   => 'title-content-le',
         'type' => 'text',
     ) );
 }
-
 ?>

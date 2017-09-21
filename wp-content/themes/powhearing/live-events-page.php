@@ -16,6 +16,11 @@ echo "live-events-page.php <br>";
     <?php get_template_part( 'template-parts/comp/scenarios-comp', 'detail' ); ?>
 </div>
 
+<!-- getting template_part that is setting for each page his content of scenarios -->
+<div>
+    <?php get_template_part( 'template-parts/comp/services-live-events', 'detail' ); ?>
+</div>
+
 <!-- getting template_part that is setting for each page his content of success-story-->
 
 <div>
