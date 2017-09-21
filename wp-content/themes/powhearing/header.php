@@ -16,7 +16,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?>>	
+
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -81,3 +82,5 @@
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );
+		get_template_part("template-parts/comp/modal-form","detail");
+		get_template_part("template-parts/comp/modal-products","detail"); ?>

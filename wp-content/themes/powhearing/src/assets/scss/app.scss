@@ -70,16 +70,16 @@
 @import "modules/content";
 @import "modules/footer";
 @import "modules/percentage";
-
-//@import "modules/about";
-//@import "modules/senarios";
-
+@import "modules/about";
 @import "modules/editor-style";
-@import "modules/thx";
+@import "modules/thanks";
+@import "modules/contact-form";
+@import "modules/modal-products";
 @import "modules/scenarios";
 @import "modules/success";
-
 @import "modules/description";
+@import "modules/wwd";
+@import "modules/solutions";
 
 // Components
 @import "components/buttons";
