@@ -1,4 +1,4 @@
-<?php echo 'percentage.php'.nl2br("\n"); ?>
+<!-- <?php echo 'percentage.php'.nl2br("\n"); ?> -->
 
 <?php while ( have_posts() ) : the_post(); ?>
     <?php

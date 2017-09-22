@@ -1,4 +1,4 @@
-<?php echo 'scenarios-comp.php'.nl2br("\n"); ?>
+<!-- <?php echo 'scenarios-comp.php'.nl2br("\n"); ?> -->
 
 <div class="scenarios-section">
     <h1>Scenarios</h1>
