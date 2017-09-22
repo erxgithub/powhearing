@@ -1,6 +1,6 @@
 <!-- Description component that will present description for each page -->
 
-<?php echo "description.php <br>";?>
+<!-- <?php echo "description.php <br>";?> -->
 
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="box">

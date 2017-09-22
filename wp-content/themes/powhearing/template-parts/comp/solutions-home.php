@@ -1,4 +1,4 @@
-<?php echo 'solutions-home.php'.nl2br("\n"); ?>
+<!-- <?php echo 'solutions-home.php'.nl2br("\n"); ?> -->
 
 <?php
 while ( have_posts() ) : the_post();

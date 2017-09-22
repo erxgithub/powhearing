@@ -1,4 +1,4 @@
-<?php echo 'individual-services.php'.nl2br("\n"); ?>
+<!-- <?php echo 'individual-services.php'.nl2br("\n"); ?> -->
 
 <?php while ( have_posts() ) : the_post(); ?>
     <?php

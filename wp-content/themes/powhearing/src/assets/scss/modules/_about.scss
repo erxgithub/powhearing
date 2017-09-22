@@ -7,6 +7,7 @@
     font-family: Lato-Regular;
 }
 
+
 .about-content h4 {
     font-family: Lato-Bold;
 }
@@ -14,6 +15,7 @@
 .about-content p {
     font-family: Lato-Regular;
 }
+
 
 @media only screen and (max-width: 599px) {
     .about-image {
@@ -32,9 +34,16 @@
     .about-content p {
         font-size: 1rem;
     }
+    
+    .div-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1239px) {
+
     .about-image {
         width: 30%;
         padding: 2rem 0 0 2rem;
@@ -54,6 +63,7 @@
 }
 
 @media only screen and (min-width: 1240px) {
+
     .about-image {
         padding: 2rem 0 0 2rem;
         width: 30%;

@@ -1,6 +1,6 @@
 <?php
 /* Template Name: individuals */
-echo "page-individuals.php <br>";
+//echo "page-individuals.php <br>";
 ?>
 
 <?php get_header(); ?>

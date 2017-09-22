@@ -1,4 +1,4 @@
-<?php echo 'thanks.php'.nl2br("\n"); ?>
+<!-- <?php echo 'thanks.php'.nl2br("\n"); ?> -->
 
 <div class="thanks-section">
 
