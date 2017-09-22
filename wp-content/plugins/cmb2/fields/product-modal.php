@@ -6,19 +6,21 @@ add_action( 'cmb2_admin_init', 'cmb2_product_modal');
 function cmb2_product_modal() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_product_modal_';
+    
     $cmb = new_cmb2_box( array(
         'id'           => 'product_modal',
         'title'        => 'Product Modal',
         'object_types' => array( 'page' ), // post type
-        //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
+        //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
-            'value' => array('front-page.php','page-organizations.php',
-                'page-individuals.php', 'live-events-page.php')
+            'value' => array('front-page.php','page-templates/page-organizations.php',
+                'page-templates/page-individuals.php', 'page-templates/live-events-page.php')
          ),
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
         'show_names'   => true, // Show field names on the left
     ) );
+
     $group_field_id = $cmb->add_field( array(
         'id'          => 'product_modal_repeat_group',
         'type'        => 'group',

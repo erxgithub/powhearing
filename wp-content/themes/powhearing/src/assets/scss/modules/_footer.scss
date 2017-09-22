@@ -1,4 +1,5 @@
 .footer-container {
+
   margin: 2rem auto 0rem auto;
   border-top: 1px solid $medium-gray;
   // margin-top: rem-calc(60);
@@ -40,7 +41,7 @@
 }
 
 footer {
-  display: flex;
+  display: flex;  // WWWHHHHYYYYY
 }
 
 // for POW HEARING logo, site links, and contact section, common class
@@ -64,10 +65,26 @@ footer {
   padding: 0.5rem 0 0.5rem 0;
 }
 
+
 #media_image-3 {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+
+a{
+
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 1240px) {
+
+  footer {
+    flex-basis: 0;
+  }
+
+
 }
 
 #nav_menu-2 {
@@ -75,7 +92,7 @@ footer {
   flex-direction: column;
   flex-basis: 50%;
 }
- 
+
 #menu-footer-menu {
   display: flex;
   flex-direction: column;

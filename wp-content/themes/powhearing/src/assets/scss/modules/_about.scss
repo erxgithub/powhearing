@@ -1,159 +1,83 @@
-.gray-back-color{
-    background-color: #f2f2f2;
+.about-image img {
+    min-width: 100%;
 }
 
-.about-title{
-    font-weight: bold;
-    font-family: Lato-Bold;
-    padding-bottom: 2rem;
-}
-
-.about-image1{
-    padding-bottom: 1rem;
-}
-
-.about-content{
-    padding-bottom: 2rem;
+.about-content {
+    padding: 2rem;
     font-family: Lato-Regular;
 }
 
-.about-div-box .button {
+
+.about-content h4 {
     font-family: Lato-Bold;
-    background-color: #9e2f89;
-    color: white;
 }
 
-// mobile
+.about-content p {
+    font-family: Lato-Regular;
+}
+
+
 @media only screen and (max-width: 599px) {
-    .about-box {
-        margin-left: 7%;
-        margin-right: 7%;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-title {
-        font-size: 1.5rem;
+    .about-image {
+        width: 30%;
+        padding: 3rem 0 0 1rem;
     }
 
     .about-content {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        width: 100%;
+        width: 70%;
     }
 
-    .about-div-box .button {
-        font-size: 1rem;
-        padding: 0.5rem 1.25rem 0.5rem 1.25rem;
-        border-radius: 6px;
+    .about-content h4 {
+        font-size: 1.5rem;
     }
 
-    .about-image2{
-        visibility: hidden;
-        width: 0vw;
+    .about-content p {
+        font-size: 1rem;
+    }
+    
+    .div-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-// tablet
 @media only screen and (min-width: 600px) and (max-width: 1239px) {
-    .about-div{
-        display: flex;
-        flex-direction: row;
 
-    }
-    .div-about-image{
-        width: 40%;
-    }
-    .about-div-box{
-        width: 60%;
-    }
-
-    .about-box {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .about-title {
-        font-size: 2rem;
-        padding-bottom: 0rem;
-        margin-left: 1rem;
+    .about-image {
+        width: 30%;
+        padding: 2rem 0 0 2rem;
     }
 
     .about-content {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        width: 90%;
-        margin-left: 1rem;
+        width: 70%;
     }
 
-    .about-div-box .button {
-        font-size: 2rem;
-        padding: 1rem 2.25rem 1rem 2.25rem;
-        border-radius: 10px;
+    .about-content h4 {
+        font-size: 2.25rem;
     }
 
-    .about-image1{
-        visibility: hidden;
-        width: 0vw;
+    .about-content p {
+        font-size: 1.5rem;
     }
-    .about-image2{
-        visibility: visible;
-        min-width: 100%;
-
-    }
-
-    .button{
-        margin-left: 1rem;
-    }
-
 }
 
-// desktop
 @media only screen and (min-width: 1240px) {
-    .about-div{
-        display: flex;
-        flex-direction: row;
-    }
 
-    .about-box {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+    .about-image {
+        padding: 2rem 0 0 2rem;
+        width: 30%;
     }
 
     .about-content {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        width: 80%;
-        margin-left: 1rem;
+        width: 70%;
     }
 
-    .about-div-box .button {
+    .about-content h4 {
         font-size: 3rem;
-        padding: 1.5rem 3.25rem 1.5rem 3.25rem;
-        border-radius: 15px;
     }
 
-    .about-title {
+    .about-content p {
         font-size: 2rem;
-        padding-bottom: 0rem;
-        margin-left: 1rem;
-    }
-
-    .about-image1{
-        visibility: hidden;
-        width: 0vw;
-    }
-
-    .button{
-        margin-left: 1rem;
-    }
-    .about-image2{
-        height: 41vh;
-        width: 41vw;
-
     }
 }

@@ -1,6 +1,8 @@
 <?php 
 /* Template Name: live-events */
-echo "live-events-page.php <br>";
+
+//echo "live-events-page.php <br>";
+
 ?>
 
 <?php get_header(); ?>
