@@ -16,6 +16,10 @@
     font-family: Lato-Regular;
 }
 
+.about-content button {
+    background-color: #9e2f89;
+    border-radius: 10px;
+}
 
 @media only screen and (max-width: 599px) {
     .about-image {
@@ -34,11 +38,10 @@
     .about-content p {
         font-size: 1rem;
     }
-    
-    .div-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .about-content button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
     }
 }
 
@@ -60,6 +63,11 @@
     .about-content p {
         font-size: 1.5rem;
     }
+
+    .about-content button {
+        font-size: 1.5rem;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -79,5 +87,10 @@
 
     .about-content p {
         font-size: 2rem;
+    }
+
+    .about-content button {
+        font-size: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
     }
 }

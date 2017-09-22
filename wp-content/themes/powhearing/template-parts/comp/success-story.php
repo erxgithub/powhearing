@@ -21,11 +21,11 @@
                     <div>
                         <p><?php echo $story["content"]; ?></p>
                     </div>
-                    
+                    <div class="about-content flex flex-center success-button ">
+                        <button class="button" data-open="modalForm">Let's Talk</button>
+                    </div>
+
                 </div>
-                <div class="about-div-box flex flex-center  ">
-                <p><button class="button" data-open="modalForm">Let's Talk</button></p>
-                </div> 
 
                 <?php
             }

@@ -19,12 +19,12 @@
   width: 100%;
 
 
-  article {
+ article {
     //@include xy-cell(auto);
     margin: 0;
   }
 
-  ul {
+ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
 }
 
 footer {
-  display: flex;  // WWWHHHHYYYYY
+  display: flex;
 }
 
 // for POW HEARING logo, site links, and contact section, common class
@@ -70,21 +70,6 @@ footer {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-
-a{
-
-  color: white;
-}
-
-
-
-@media only screen and (min-width: 1240px) {
-
-  footer {
-    flex-basis: 0;
-  }
-
-
 }
 
 #nav_menu-2 {
@@ -106,7 +91,8 @@ a{
 }
 
 .menu .is-active > a {
-    background: #9e2f89;
+
+    background: #9e2f89 ;
     color: #fff;
 }
 
@@ -118,13 +104,13 @@ a {
 }
 
 a:hover {
-  color: #9e2f89;
+  color: #9e2f89 ;
 }
 
 @media only screen and (min-width: 1240px) {
 
-  footer {
+
+ footer {
     flex-basis: 0;
   }
- 
 }
