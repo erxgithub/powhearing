@@ -1,0 +1,144 @@
+.services-section {
+    background-color: #f2f2f2;
+}
+
+.services-section h2 {
+    font-family: Lato-Bold;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+}
+
+.services-grid .service-box:nth-child(1) {
+    display: none;
+}
+
+.service-box {
+    display: flex;
+}
+
+.service-box img {
+    min-width: 100%;
+}
+
+.service-button {
+    display: flex;
+    padding: 0 0 0 2rem;
+}
+
+.service-box .button {
+    display: flex;
+    justify-content: center;
+    font-family: Lato-Bold;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #2f7bff;
+    margin: 0;
+}
+
+@media only screen and (max-width: 599px) {
+    .services-section {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .service-box {
+        flex-direction: row;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .service-image {
+        width: 30%;
+    }
+
+    .service-button {
+        justify-content: flex-start;
+        width: 70%;
+    }
+
+    .service-button .button {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1239px) {
+    .services-section {
+        padding: 3rem 6rem 1rem 6rem;
+    }
+
+    .services-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .services-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service-box {
+        flex-direction: column;
+        width: 40%;
+        margin: 5%;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+
+    .service-button {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .service-button .button {
+        font-size: 1.5rem;
+        padding: 1.5rem 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .services-section {
+        padding: 6rem 12rem 0 12rem;
+    }
+
+    .services-section h2 {
+        font-size: 3rem;
+    }
+
+    .services-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service-box {
+        flex-direction: column;
+        width: 40%;
+        margin: 5%;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+
+    .service-button {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .service-button .button {
+        font-size: 2rem;
+        padding: 1.5rem 0 0 0;
+    }
+}
