@@ -8,6 +8,7 @@
  */
 ?>
 
+
 <div class="footer-container" data-sticky-footer>
 	<footer class="footer">
 		<div class="footer">
