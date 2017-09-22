@@ -1,6 +1,6 @@
 <?php
 /* Template Name: organizations */
-echo "page-organizations.php <br>";
+//echo "page-organizations.php <br>";
 ?>
 
 <?php get_header(); ?>

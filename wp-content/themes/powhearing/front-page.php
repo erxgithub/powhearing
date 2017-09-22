@@ -1,5 +1,5 @@
 <?php /* Template Name: front-page */ ?>
-<?php echo "front-page.php <br>";
+<?php //echo "front-page.php <br>";
 get_header(); ?>
 
 <!-- LINKS FOR MODALS -->

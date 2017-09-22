@@ -1,7 +1,7 @@
 <!-- What we do component that will present what we do for front page -->
 
 
-<?php echo "what-we-do.php <br>";?>
+<!-- <?php echo "what-we-do.php <br>";?> -->
 
 <!-- while loop to get -->
 <?php while ( have_posts() ) : the_post(); ?>
