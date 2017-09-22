@@ -21,7 +21,7 @@
                         <img src="<?php echo $device_solution["image-device-solutions"]; ?>" />
                     </div>
 
-                <div>
+                <div class="about-div-box">
                     <button class="button modalInfo" 
                         data-open="modalInfo" data-title="<?php echo $device_solution["device-name"]?>"
                         data-img="<?php echo $device_solution["image-device-solutions"]?>" data-content="<?php echo $device_solution["cs-title-content"]?>">

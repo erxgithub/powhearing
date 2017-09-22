@@ -16,7 +16,7 @@
 
                 <div>
                     <img src="<?php echo $service_le["image-le"]; ?>" />
-                    </div>
+                </div>
 
                 <div>
                         <button class="button modalInfo" 

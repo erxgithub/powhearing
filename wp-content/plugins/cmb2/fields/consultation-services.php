@@ -14,7 +14,7 @@ function cmb2_consultation_services() {
         'object_types' => array( 'page' ), // post type
         //'show_on'      => array( 'key' => 'page-template', 'value' => 'page-organizations.php' ),
         'show_on'      => array( 'key' => 'page-template',
-            'value' => array('page-individuals.php')
+            'value' => array('page-templates/page-individuals.php')
          ),
         'context'      => 'normal', //  'normal', 'advanced', or 'side'
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
