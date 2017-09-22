@@ -11,6 +11,11 @@
                     <h2><?php echo $services_le[0][0]["title"]; ?></h2>
                 </div>
 
+
+                <div>
+                    <img src="<?php echo $service_le["image-le"]; ?>" />
+                </div>
+
                 <div class="services-grid">
         <?php
         foreach($services_le[0] as $key => $service_le)
@@ -33,6 +38,7 @@
                     </div>
             <?php
         } ?>
+
 
                 </div>
             </div>

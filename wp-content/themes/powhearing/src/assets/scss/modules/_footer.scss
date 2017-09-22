@@ -1,4 +1,5 @@
 .footer-container {
+
   margin: 2rem auto 0rem auto;
   border-top: 1px solid $medium-gray;
   // margin-top: rem-calc(60);
@@ -64,6 +65,7 @@ footer {
   padding: 0.5rem 0 0.5rem 0;
 }
 
+
 #media_image-3 {
   display: flex;
   flex-direction: column;
@@ -89,6 +91,7 @@ footer {
 }
 
 .menu .is-active > a {
+
     background: #9e2f89 ;
     color: #fff;
 }
@@ -106,8 +109,8 @@ a:hover {
 
 @media only screen and (min-width: 1240px) {
 
+
  footer {
     flex-basis: 0;
   }
-
 }
