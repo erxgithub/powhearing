@@ -16,7 +16,7 @@
                     <?php echo $blah[0][0]["content"];?>
                     </p>
                 </div>
-                <div class="about-div-box flex flex-center">
+                <div class="flex flex-center about-content description-button">
                     <p><button class="button" data-open="modalForm">Let's Talk</button></p>
                 </div>
             </div>

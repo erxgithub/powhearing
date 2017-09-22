@@ -1,6 +1,6 @@
 <!-- About component that will present about for front page -->
 
-<?php echo "about.php <br>";
+<?php //echo "about.php <br>";
 $about = get_post_meta(get_the_ID(), "about_repeat_group");
 $about_title = $about[0][0]["title"];
 $about_content = $about[0][0]["content"]?>
@@ -15,6 +15,7 @@ $about_content = $about[0][0]["content"]?>
             <div class="large-8 small-12 about-content">
                 <h4><?php  echo $about_title ?> </h4>
                 <p> <?php echo $about_content ?> </p>
+                <button class="button" data-open="modalForm">Let's Talk</button>
             </div>
         </div>
     </div>
