@@ -6,8 +6,8 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
 ?>
+
 
 <div class="footer-container" data-sticky-footer>
 	<footer class="footer">
