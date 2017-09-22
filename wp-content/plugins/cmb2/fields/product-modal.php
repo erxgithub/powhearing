@@ -1,6 +1,3 @@
-<!--  component that will  -->
-
-
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_product_modal');
 /**
@@ -9,6 +6,7 @@ add_action( 'cmb2_admin_init', 'cmb2_product_modal');
 function cmb2_product_modal() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_product_modal_';
+    
     $cmb = new_cmb2_box( array(
         'id'           => 'product_modal',
         'title'        => 'Product Modal',
@@ -22,6 +20,7 @@ function cmb2_product_modal() {
         'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
         'show_names'   => true, // Show field names on the left
     ) );
+
     $group_field_id = $cmb->add_field( array(
         'id'          => 'product_modal_repeat_group',
         'type'        => 'group',
