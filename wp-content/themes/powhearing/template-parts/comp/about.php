@@ -12,7 +12,7 @@
                         <div class="div-about-image">
                             <img class="about-image2 " src="<?php echo $about[0][0]['image']; ?>" />
                         </div>
-                        <div class="about-div-box">
+                        <div class="about-div-box ">
                             <div class="about-image-div">
                                 <h3 class="about-title flex flex-center">
                                     <?php echo $about[0][0]["title"];?>
@@ -25,7 +25,9 @@
                                 <p class="about-content flex flex-center">
                                 <?php echo $about[0][0]["content"];?>
                                 </p>
-                                <button class="button" data-open="modalForm">Let's Talk</button>
+                                <div class="div-button">
+                                    <button class="button" data-open="modalForm">Let's Talk</button>
+                                </div>
                             </div>
                         </div>
                     </div>    
